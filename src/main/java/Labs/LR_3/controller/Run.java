@@ -9,19 +9,19 @@ import Labs.LR_3.model.Sex;
 
 public class Run {
     public static void createTypicalUniversity() {
-        Human universityHead = new Human("Fabio", "West", "", Sex.MALE);
+        Human universityHead = new Human("Fabio", "West", "Sophron", Sex.MALE);
         University university = new University("University of Technology", universityHead);
 
-        Human facultyHead = new Human("Alexandra ", "Carson", "", Sex.FEMALE);
+        Human facultyHead = new Human("Alexandra ", "Carson", "Yara", Sex.FEMALE);
         Faculty faculty = new Faculty("Faculty of Philosophy", facultyHead);
         university.addFaculty(faculty);
 
-        Human departmentHead = new Human("Denzel", "Kline", "", Sex.MALE);
+        Human departmentHead = new Human("Denzel", "Kline", "Zeus", Sex.MALE);
         Department department = new Department("Faculty of Law", departmentHead);
         faculty.addDepartment(department);
 
-        Student student1 = StudentCreator.createStudent("Kendra", "Schaefer", "", Sex.FEMALE, "Group 101");
-        Student student2 = StudentCreator.createStudent("Jana", "Schaefer", "", Sex.FEMALE, "Group 102");
+        Student student1 = StudentCreator.createStudent("Kendra", "Schaefer", "Jescha", Sex.FEMALE, "Group 101");
+        Student student2 = StudentCreator.createStudent("Jana", "Schaefer", "Jescha", Sex.FEMALE, "Group 102");
         department.addStudent(student1);
         department.addStudent(student2);
 
