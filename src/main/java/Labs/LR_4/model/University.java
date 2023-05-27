@@ -1,4 +1,6 @@
-package Labs.LR_3.model;
+package Labs.LR_4.model;
+
+import java.util.Objects;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,6 +30,21 @@ public class University {
     public List<Faculty> getFaculties() {
         return faculties;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null || getClass() != obj.getClass()) {
+            return false;
+        }
+        University other = (University) obj;
+
+        return Objects.equals(name, other.name) &&
+                Objects.equals(faculties, other.faculties);
+    }
+
 
 }
 

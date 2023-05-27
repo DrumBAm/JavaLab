@@ -1,7 +1,6 @@
-package Labs.LR_3.controller;
+package Labs.LR_4.controller;
 
-import Labs.LR_3.model.Faculty;
-import Labs.LR_3.model.Human;
+import Labs.LR_4.model.*;
 
 public class FacultyCreator {
     public static Faculty createFaculty(String name, Human head) {

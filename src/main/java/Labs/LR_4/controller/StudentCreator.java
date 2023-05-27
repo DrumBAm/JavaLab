@@ -1,7 +1,6 @@
-package Labs.LR_3.controller;
+package Labs.LR_4.controller;
 
-import Labs.LR_3.model.Student;
-import Labs.LR_3.model.Sex;
+import Labs.LR_4.model.*;
 
 public class StudentCreator {
     public static Student createStudent(String firstName, String lastName, String patronymic, Sex sex, String group) {
