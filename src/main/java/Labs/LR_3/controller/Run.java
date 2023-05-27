@@ -20,7 +20,7 @@ public class Run {
         Department department = new Department("Faculty of Law", departmentHead);
         faculty.addDepartment(department);
 
-        Student student1 = StudentCreator.createStudent("Kendra ", "Kendra ", "", Sex.FEMALE, "Group 101");
+        Student student1 = StudentCreator.createStudent("Kendra", "Schaefer", "", Sex.FEMALE, "Group 101");
         Student student2 = StudentCreator.createStudent("Jana", "Schaefer", "", Sex.FEMALE, "Group 102");
         department.addStudent(student1);
         department.addStudent(student2);
